@@ -57,6 +57,11 @@ public class LicencePanel extends IzPanel implements ActionListener
     private JRadioButton noRadio;
 
     /**
+     * The textArea of our panel
+     */
+    private JTextArea textArea;
+
+    /**
      * The constructor.
      *
      * @param parent The parent window.
@@ -72,7 +77,7 @@ public class LicencePanel extends IzPanel implements ActionListener
 
         add(LabelFactory.create(parent.langpack.getString("LicencePanel.info"),
                 parent.icons.getImageIcon("history"), LEADING), NEXT_LINE);
-        JTextArea textArea = new JTextArea(licence);
+        textArea = new JTextArea(licence);
         textArea.setCaretPosition(0);
         textArea.setEditable(false);
         textArea.setLineWrap(true);
@@ -95,6 +100,14 @@ public class LicencePanel extends IzPanel implements ActionListener
 
         setInitialFocus(noRadio);
         getLayoutHelper().completeLayout();
+    }
+
+    /**
+     * Return the textArea of our panel
+     */
+    public JTextArea getTextArea()
+    {
+        return textArea;
     }
 
     /**

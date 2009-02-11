@@ -44,6 +44,11 @@ public class InfoPanel extends IzPanel
     private String info;
 
     /**
+     * The text area of our panel
+     */
+    private JTextArea textArea;
+
+    /**
      * The constructor.
      *
      * @param parent The parent window.
@@ -65,6 +70,14 @@ public class InfoPanel extends IzPanel
         add(scroller, NEXT_LINE);
         // At end of layouting we should call the completeLayout method also they do nothing.
         getLayoutHelper().completeLayout();
+    }
+
+    /**
+     * return the textArea of our panel
+     */
+    public JTextArea getTextArea()
+    {
+        return textArea;
     }
 
     /**

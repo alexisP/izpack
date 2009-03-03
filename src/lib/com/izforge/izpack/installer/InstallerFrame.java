@@ -283,7 +283,7 @@ public class InstallerFrame extends JFrame
      * 
      * @throws Exception Description of the Exception
      */
-    private void loadPanels() throws Exception
+    protected void loadPanels() throws Exception
     {
         // Initialisation
         java.util.List panelsOrder = installdata.panelsOrder;
@@ -363,7 +363,7 @@ public class InstallerFrame extends JFrame
      * 
      * @throws Exception Description of the Exception
      */
-    private void loadIcons() throws Exception
+    protected void loadIcons() throws Exception
     {
         // Initialisations
         icons = new IconsDatabase();
@@ -465,7 +465,7 @@ public class InstallerFrame extends JFrame
     /**
      * Builds the GUI.
      */
-    private void buildGUI()
+    protected void buildGUI()
     {
         this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE); // patch 06/07/2005,
         // Fabrice Mirabile
@@ -771,7 +771,7 @@ public class InstallerFrame extends JFrame
     /**
      * Shows the frame.
      */
-    private void showFrame()
+    protected void showFrame()
     {
         pack();
         setSize(installdata.guiPrefs.width, installdata.guiPrefs.height);

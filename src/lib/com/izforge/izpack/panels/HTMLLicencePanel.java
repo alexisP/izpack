@@ -103,6 +103,15 @@ public class HTMLLicencePanel extends IzPanel implements HyperlinkListener, Acti
     }
 
     /**
+    * return the textArea of our panel
+    */
+    public JEditorPane getTextArea()
+    {
+        return textArea;
+    }
+
+
+    /**
      * Loads the license text.
      *
      * @return The license text URL.

@@ -128,6 +128,16 @@ public class HTMLInfoPanel extends IzPanel implements HyperlinkListener
         getLayoutHelper().completeLayout();
     }
 
+
+    /**
+    * return the textArea of our panel
+    */
+    public JEditorPane getTextArea()
+    {
+        return textArea;
+    }
+
+
     /*
     * loads the content of the info resource as text so that it can be parsed afterwards
     */

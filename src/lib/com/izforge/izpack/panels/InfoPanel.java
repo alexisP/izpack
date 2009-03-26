@@ -63,7 +63,7 @@ public class InfoPanel extends IzPanel
         add(LabelFactory.create(parent.langpack.getString("InfoPanel.info"), parent.icons
                 .getImageIcon("edit"), LEADING), NEXT_LINE);
         // The text area which shows the info.
-        JTextArea textArea = new JTextArea(info);
+        textArea = new JTextArea(info);
         textArea.setCaretPosition(0);
         textArea.setEditable(false);
         JScrollPane scroller = new JScrollPane(textArea);

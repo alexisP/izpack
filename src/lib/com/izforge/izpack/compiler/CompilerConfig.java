@@ -2777,7 +2777,7 @@ public class CompilerConfig extends Thread
         }
 
         // Closes the JVM
-        System.exit(exitCode);
+        //System.exit(exitCode);
     }
 
     private static String resolveIzPackHome(String home)
